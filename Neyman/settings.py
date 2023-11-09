@@ -92,16 +92,16 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'neymantech',
-#         'USER': 'adminney',
-#         'PASSWORD': 'neymantech@0122',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'neymantech',
+        'USER': 'adminney',
+        'PASSWORD': 'neymantech@0122',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 
 # Password validation
