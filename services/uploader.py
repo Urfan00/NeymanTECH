@@ -29,7 +29,7 @@ class Uploader:
 
     @staticmethod
     def services_property_photo(instance, filename):
-        return f"Services_Image/{instance.services.title}/Service_Property/{filename}"
+        return f"Services_Image/{instance.services.title}/Service_Property/{instance.title}/{filename}"
 
     @staticmethod
     def services_category_last_works(instance, filename):

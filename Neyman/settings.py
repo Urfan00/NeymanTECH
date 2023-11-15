@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a@p@)0=+n)-xx&tr0_ne@uwn^+k*uw+09*+&kua2+cu*juv%gi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'Neyman.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'http', '104.248.131.17', 'dist', 'assets')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -92,16 +92,16 @@ DATABASES = {
     }
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'neymantech',
-        'USER': 'adminney',
-        'PASSWORD': 'neymantech@0122',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'neymantech',
+#         'USER': 'adminney',
+#         'PASSWORD': 'neymantech@0122',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 
 # Password validation
